@@ -1,8 +1,109 @@
 .App {
   text-align: center;
+  max-width:675px;
+  margin:0 auto;
 }
 
 .heading{
   font-style:italic;
   
+  
+}
+
+.style-options{
+  align-items: center;
+  
+}
+.btn-list{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn{
+  background-color: transparent;
+  width:125px;
+  height:150px ;
+  border:none;
+  outline:none;
+  cursor: pointer;
+}
+
+.btn>h1{
+  padding:0;
+  margin:0;
+  font-size:1.1rem;
+}
+.btn>p{
+  padding:0;
+  margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.btn1>h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F62AA0;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+.btn1>p{
+  font-family: 'Lora', serif;
+  background-color: #26DFD0;
+  color:white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.btn2>h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #AA1945;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+.btn2>p{
+  font-family: 'Lora', serif;
+  background-color: #F9CCD3;
+  color:black;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.btn3>h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0A7029;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+.btn3>p{
+  font-family: 'Lora', serif;
+  background-color: #F79489;
+  color:white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.btn4>h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #DF362D;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+.btn4>p{
+  font-family: 'Lora', serif;
+  background-color: #FFCD58;
+  color:black;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.btn5>h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #741AAC;
+  color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+.btn5>p{
+  font-family: 'Lora', serif;
+  background-color: #DEBAD6;
+  color:white;
 }

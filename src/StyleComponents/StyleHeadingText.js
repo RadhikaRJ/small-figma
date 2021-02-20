@@ -5,7 +5,7 @@ function StyleHeadingText(props){
 
         return(
             {
-                fontSize:props.PageHeadingStyle.fontSize,
+                fontSize:props.PageHeadingStyle.fontSize+"px",
       color:props.PageHeadingStyle.color,
       backgroundColor:props.PageHeadingStyle.backgroundColor,
       fontFamily:props.PageHeadingStyle.fontFamily

@@ -70,11 +70,25 @@ function App() {
     }}
     >Increase Size</button>
 
-    <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
+    <span> Paragraph Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
     
     <button
     onClick={() =>{
       setPageTextStyle({...PageTextStyle, fontSize: Number(PageTextStyle.fontSize)-8})
+    }}
+    >Decrease Size</button>
+    <hr></hr>
+    <button 
+    onClick={() => {
+      setPageHeadingStyle({ ...PageHeadingStyle,fontSize: Number(PageHeadingStyle.fontSize) + 8 });
+    }}
+    >Increase Size</button>
+
+    <span> Heading Text Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
+    
+    <button
+    onClick={() =>{
+      setPageHeadingStyle({...PageHeadingStyle, fontSize: Number(PageHeadingStyle.fontSize)-8})
     }}
     >Decrease Size</button>
     <hr></hr>

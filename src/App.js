@@ -18,44 +18,19 @@ function App() {
 
   const[PageTextStyle,setPageTextStyle]  = useState({ 
     fontSize:"8",
-  color:"red",
-  backgroundColor:"yellow",
-  fontFamily:"Lora"});
+  color:"",
+  backgroundColor:"",
+  fontFamily:""});
    
   
     const [PageHeadingStyle,setPageHeadingStyle] = useState( {
       fontSize:"8",
-      color:"red",
+      color:"",
       backgroundColor:"",
       fontFamily:""
     });
 
-  // // const [textSize,setTextSize]=useState(16);
-  // // const [HeadingSize,setHeadingSize]=useState(24);
-
   
-  // // function increaseFontSize(){
-  // //   setTextSize(textSize+8);
-  // //   setHeadingSize(HeadingSize+8);
-  // // }
-
-  // // function decreaseFontSize(){
-  // //   setTextSize(textSize-8);
-  // //   setHeadingSize(HeadingSize-8);
-  // // }
-
-  // // function updateParaStyle(){
-  // //   return{
-  // //     fontSize:textSize
-      
-  // //   }
-  // //      }
-
-  // //      function updateHeadingStyle(){
-  // //       return{
-  // //         fontSize:HeadingSize
-  // //       }
-  // // }
   
 
 

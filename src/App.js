@@ -39,7 +39,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1>RJ's Themes</h1>
+      <h1>My Figma</h1>
       <hr></hr>
       
       <button 
@@ -97,6 +97,8 @@ function App() {
     }}
     ></input>
     <hr></hr>
+    
+    <br></br>
     <br></br>
     <h3>Select A Theme</h3>
     <div class="btn-list">

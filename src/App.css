@@ -23,10 +23,11 @@
 .btn{
   background-color: transparent;
   width:125px;
-  height:150px ;
+  height:fit-content ;
   border:none;
   outline:none;
   cursor: pointer;
+  
 }
 
 .btn>h1{
@@ -105,5 +106,5 @@
 .btn5>p{
   font-family: 'Lora', serif;
   background-color: #DEBAD6;
-  color:white;
+  color:black;
 }

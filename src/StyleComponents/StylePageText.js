@@ -10,7 +10,7 @@ function StylePageText(props){
       // console.log(props.PageTextStyle.backgroundColor);
       // console.log(props.PageTextStyle.fontSize);
       return({
-        fontSize:props.PageTextStyle.fontSize,
+        fontSize:props.PageTextStyle.fontSize+"px",
       color:props.PageTextStyle.color,
       backgroundColor:props.PageTextStyle.backgroundColor,
       fontFamily:props.PageTextStyle.fontFamily

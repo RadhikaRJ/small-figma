@@ -5,7 +5,7 @@ import Content from './StyleComponents/Content';
 
 
 
- 
+
 
 
 
@@ -13,6 +13,7 @@ import Content from './StyleComponents/Content';
 
 function App() {
 
+  
 
   const[PageTextStyle,setPageTextStyle]  = useState({ 
     fontSize:"16",
@@ -33,44 +34,55 @@ function App() {
     });
 
   
-  
+  function setStyle(){
+
+    return({
+      backgroundColor:"#FDB750",
+      color:"#FC2E20",
+      fontWeight:700,
+      fontFamily:"Lobster"
+    });
+  }
 
 
   
   return (
     <div className="App">
-      <h1>My Figma</h1>
-      <hr></hr>
+      <h1>Your Figma</h1>
       
-      <button 
+      <h3>Make a choice:</h3>
+      
+      <button style={setStyle()}
     onClick={() => {
       setPageTextStyle({ ...PageTextStyle,fontSize: Number(PageTextStyle.fontSize) + 8 });
     }}
-    >Increase Size</button>
+    >+8px</button>
 
-    <span> Paragraph Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
+    <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
     
-    <button
+    <button style={setStyle()}
     onClick={() =>{
       setPageTextStyle({...PageTextStyle, fontSize: Number(PageTextStyle.fontSize)-8})
     }}
-    >Decrease Size</button>
-    <hr></hr>
-
-    <button 
+    >-8px</button>
+   <br></br>
+   <br></br>
+    <button  style={setStyle()}
     onClick={() => {
       setPageHeadingStyle({ ...PageHeadingStyle,fontSize: Number(PageHeadingStyle.fontSize) + 8 });
     }}
-    >Increase Size</button>
+    >+8px</button>
 
-    <span> Heading Text Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
+    <span> Heading Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
     
-    <button
+    <button style={setStyle()}
     onClick={() =>{
       setPageHeadingStyle({...PageHeadingStyle, fontSize: Number(PageHeadingStyle.fontSize)-8})
     }}
-    >Decrease Size</button>
-    <hr></hr>
+    >-8px</button>
+    
+<br></br>
+<br></br>
     <label>Heading Background Color:  </label>
     <input type="color" 
     onChange={(change)=>{
@@ -96,45 +108,47 @@ function App() {
       setPageTextStyle({...PageTextStyle,color:(change.target.value)})
     }}
     ></input>
-    <hr></hr>
+    
     
     <br></br>
     <br></br>
-    <h3>Select A Theme</h3>
+    <h3>Or click below suggested themes</h3>
     <div class="btn-list">
 
+
+    
     <button class="btn btn1" 
     onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#F62AA0",color:"white"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#26DFD0",color:"white"});
+      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#F62AA0",color:"white" , fontFamily:"Crimson Text Regular"});
+      setPageTextStyle({...PageTextStyle,backgroundColor:"#26DFD0",color:"white", fontFamily:"Source Sans Pro Regular"});
     }}
     ><h1>Smile </h1><p>You are Amazing and Confident</p></button>
     <button class="btn btn2"
     onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#AA1945",color:"white"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#F9CCD3",color:"black"});
+      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#AA1945",color:"white",fontFamily:"Montserrat"});
+      setPageTextStyle({...PageTextStyle,backgroundColor:"#F9CCD3",color:"black",fontFamily:"Lora"});
     }}
     ><h1>Laugh </h1><p>Its known to be the best remedy</p></button>
     <button class="btn btn3"
     onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#0A7029",color:"white"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#F79489",color:"white"});
+      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#0A7029",color:"white", fontFamily:"Lato Light"});
+      setPageTextStyle({...PageTextStyle,backgroundColor:"#F79489",color:"white",fontFamily:"Lato Regular"});
     }}
     ><h1>Help</h1><p> And you will be helped!</p></button>
     <button class="btn btn4"
     onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#DF362D",color:"white"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#FFCD58",color:"black"});
+      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#DF362D",color:"white", fontFamily:"Luckiest Guy"});
+      setPageTextStyle({...PageTextStyle,backgroundColor:"#FFCD58",color:"black", fontFamily:"Bitter Regular"});
     }}
     ><h1>Breathe</h1><p>Nature helps to rejuvenate</p></button>
     <button class="btn btn5"
     onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#741AAC",color:"white"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#DEBAD6",color:"black"});
+      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#741AAC",color:"white",fontFamily:" Montserrat Bold"});
+      setPageTextStyle({...PageTextStyle,backgroundColor:"#DEBAD6",color:"black",fontFamily: "Roboto Regular"});
     }}
     ><h1>Share</h1><p>That's how you grow!</p></button>
     </div>
-    <hr></hr>
+    <h3>This is what your selected combinations result in👇</h3>
     <Content PageHeadingStyle={PageHeadingStyle} PageTextStyle={PageTextStyle}/>
      
     </div>

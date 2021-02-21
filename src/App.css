@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Teko&display=swap');
 .App {
   text-align: center;
   max-width:675px;
   margin:0 auto;
+  background-color:#FFD53D;
+  border-radius: 1em;
 }
-
+body{
+  background-color:#40B0DF;
+  color:#0000A3;
+  font-family:"Lobster";
+}
 .heading{
   font-style:italic;
   
@@ -40,15 +49,16 @@
   margin:0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
 .btn1>h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Crimson Text Regular', sans-serif;
   background-color: #F62AA0;
   color:white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 .btn1>p{
-  font-family: 'Lora', serif;
+  font-family: 'Source Sans Pro Regular', serif;
   background-color: #26DFD0;
   color:white;
 }
@@ -68,43 +78,43 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 .btn3>h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato Light', sans-serif;
   background-color: #0A7029;
   color:white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 .btn3>p{
-  font-family: 'Lora', serif;
+  font-family: 'Lato Regular', serif;
   background-color: #F79489;
   color:white;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .btn4>h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Luckiest Guy', sans-serif;
   background-color: #DF362D;
   color:white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Lato:ital@1&family=Luckiest+Guy&display=swap');
 .btn4>p{
-  font-family: 'Lora', serif;
+  font-family: 'Bitter Regular', serif;
   background-color: #FFCD58;
   color:black;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 .btn5>h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Bold', sans-serif;
   background-color: #741AAC;
   color:white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Luckiest+Guy&family=Roboto+Mono:wght@200&display=swap');
 .btn5>p{
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Regular', serif;
   background-color: #DEBAD6;
   color:black;
 }

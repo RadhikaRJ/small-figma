@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react';
 import Content from './StyleComponents/Content';
 import ButtonThemes from './StyleComponents/ButtonThemes';
 import ButtonTextSize from './StyleComponents/ButtonTextSize';
+import ButtonHeadingFontSize from './StyleComponents/ButtonHeadingFontSize';
 
 function App() {
 
@@ -26,17 +27,7 @@ function App() {
     });
 
   
-  function setStyle(){
-
-    return({
-      backgroundColor:"#FDB750",
-      color:"#3B0918",
-      fontWeight:700,
-      fontFamily:"Lobster"
-    });
-  }
-
-
+  
   
   return (
     <div className="App">
@@ -44,7 +35,7 @@ function App() {
       
       <h3>Make a choice:</h3>
       
-      <ButtonTextSize setStyle={setStyle}      
+      <ButtonTextSize       
       setPageTextStyle={setPageTextStyle} 
       PageTextStyle={PageTextStyle}
       fontSize={Number(PageTextStyle.fontSize) + 8} 
@@ -52,37 +43,39 @@ function App() {
       />
 
      <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
-     
-      <ButtonTextSize setStyle={setStyle}      
+
+      <ButtonTextSize      
       setPageTextStyle={setPageTextStyle} 
       PageTextStyle={PageTextStyle}
       fontSize={Number(PageTextStyle.fontSize) - 8} 
       btnText="-8px"
       />
-      
-
    
-    
-    
    <br></br>
    <br></br>
-    <button  style={setStyle()}
-    onClick={() => {
-      setPageHeadingStyle({ ...PageHeadingStyle,fontSize: Number(PageHeadingStyle.fontSize) + 8 });
-    }}
-    >+8px</button>
 
-    <span> Heading Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
-    
-    <button style={setStyle()}
-    onClick={() =>{
-      setPageHeadingStyle({...PageHeadingStyle, fontSize: Number(PageHeadingStyle.fontSize)-8})
-    }}
-    >-8px</button>
+   <ButtonHeadingFontSize 
+      setPageHeadingStyle={setPageHeadingStyle} 
+      PageHeadingStyle={PageHeadingStyle}
+      fontSize={Number(PageHeadingStyle.fontSize) + 8} 
+      btnText="+8px"
+      />
+
+      <span> Heading Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
+
+      <ButtonHeadingFontSize      
+      setPageHeadingStyle={setPageHeadingStyle} 
+      PageHeadingStyle={PageHeadingStyle}
+      fontSize={Number(PageHeadingStyle.fontSize) - 8} 
+      btnText="-8px"
+      />
+   
     
 <br></br>
 <br></br>
     <label>Heading Background Color:  </label>
+
+    
     <input type="color" 
     onChange={(change)=>{
       setPageHeadingStyle({...PageHeadingStyle, backgroundColor:(change.target.value)})

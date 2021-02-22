@@ -1,6 +1,6 @@
 
 
-function InputColor(props){
+function InputBackgroundColor(props){
 
 return(
     <input type="color" 
@@ -11,4 +11,4 @@ return(
 )
 }
 
-export default InputColor;
+export default InputBackgroundColor;

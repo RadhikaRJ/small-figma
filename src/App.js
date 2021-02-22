@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Content from './StyleComponents/Content';
 import ButtonThemes from './StyleComponents/ButtonThemes';
 import ButtonTextSize from './StyleComponents/ButtonTextSize';
-import InputColor from './StyleComponents/InputColor';
+import InputBackgroundColor from './StyleComponents/InputColor';
 
 function App() {
 
@@ -76,7 +76,7 @@ function App() {
     <label>Heading Background Color:  </label>
 
 
-    <InputColor PageHeadingStyle={PageHeadingStyle}
+    <InputBackgroundColor PageHeadingStyle={PageHeadingStyle}
     setBackgroundColor={setPageHeadingStyle}
     
     />
@@ -90,7 +90,7 @@ function App() {
     ></input>
     <br></br><br></br>
     <label>Paragraph Background Color:  </label>
-    <InputColor PageHeadingStyle={PageTextStyle}
+    <InputBackgroundColor PageHeadingStyle={PageTextStyle}
     setBackgroundColor={setPageTextStyle}
     
     />

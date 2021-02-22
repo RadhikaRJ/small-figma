@@ -29,7 +29,7 @@ function App() {
 
     return({
       backgroundColor:"#FDB750",
-      color:"#FC2E20",
+      color:"#3B0918",
       fontWeight:700,
       fontFamily:"Lobster"
     });
@@ -139,7 +139,7 @@ function App() {
     setPageHeadingStyle={setPageHeadingStyle} 
     headingbackgroundColor="#0A7029" 
     headingcolor="white"  
-    headingfontFamily="Montserrat" 
+    headingfontFamily="Permanent Marker" 
     PageTextStyle={PageTextStyle}
     setPageTextStyle={setPageTextStyle} 
     pagebackgroundColor="#F79489"
@@ -153,7 +153,7 @@ function App() {
     setPageHeadingStyle={setPageHeadingStyle} 
     headingbackgroundColor="#DF362D" 
     headingcolor="white"  
-    headingfontFamily="Luckiest Guy" 
+    headingfontFamily="Satisfy"
     PageTextStyle={PageTextStyle}
     setPageTextStyle={setPageTextStyle} 
     pagebackgroundColor="#FFCD58"

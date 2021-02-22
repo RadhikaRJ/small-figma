@@ -2,18 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Content from './StyleComponents/Content';
-
-
-
-
-
-
-
-
+import ButtonThemes from './StyleComponents/ButtonThemes';
 
 function App() {
-
-  
 
   const[PageTextStyle,setPageTextStyle]  = useState({ 
     fontSize:"16",
@@ -23,7 +14,7 @@ function App() {
   padding:"0.5em",
   fontFamily:""});
    
-  
+ 
     const [PageHeadingStyle,setPageHeadingStyle] = useState( {
       fontSize:"24",
       color:"",
@@ -113,44 +104,84 @@ function App() {
     <br></br>
     <br></br>
     <h3>Or click below suggested themes</h3>
+    
     <div class="btn-list">
 
+    <ButtonThemes 
+    setPageHeadingStyle={setPageHeadingStyle} 
+    headingbackgroundColor="#F62AA0" 
+    headingcolor="white"  
+    headingfontFamily="Crimson Text Regular" 
+    PageTextStyle={PageTextStyle}
+    setPageTextStyle={setPageTextStyle} 
+    pagebackgroundColor="#26DFD0"
+    pagecolor="white" 
+    pagefontFamily="Source Sans Pro Regular" 
+    PageHeadingStyle={PageHeadingStyle}
+    classVal="btn btn1"
+    />
 
+    <ButtonThemes 
+    setPageHeadingStyle={setPageHeadingStyle} 
+    headingbackgroundColor="#AA1945" 
+    headingcolor="white"  
+    headingfontFamily="Lato Light" 
+    PageTextStyle={PageTextStyle}
+    setPageTextStyle={setPageTextStyle} 
+    pagebackgroundColor="#F9CCD3"
+    pagecolor="black" 
+    pagefontFamily="Lora" 
+    PageHeadingStyle={PageHeadingStyle}
+    classVal="btn btn2"
+    />
+
+    <ButtonThemes 
+    setPageHeadingStyle={setPageHeadingStyle} 
+    headingbackgroundColor="#0A7029" 
+    headingcolor="white"  
+    headingfontFamily="Montserrat" 
+    PageTextStyle={PageTextStyle}
+    setPageTextStyle={setPageTextStyle} 
+    pagebackgroundColor="#F79489"
+    pagecolor="white" 
+    pagefontFamily="Lato Regular" 
+    PageHeadingStyle={PageHeadingStyle}
+    classVal="btn btn3"
+    />
     
-    <button class="btn btn1" 
-    onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#F62AA0",color:"white" , fontFamily:"Crimson Text Regular"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#26DFD0",color:"white", fontFamily:"Source Sans Pro Regular"});
-    }}
-    ><h1>Smile </h1><p>You are Amazing and Confident</p></button>
-    <button class="btn btn2"
-    onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#AA1945",color:"white",fontFamily:"Montserrat"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#F9CCD3",color:"black",fontFamily:"Lora"});
-    }}
-    ><h1>Laugh </h1><p>Its known to be the best remedy</p></button>
-    <button class="btn btn3"
-    onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#0A7029",color:"white", fontFamily:"Lato Light"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#F79489",color:"white",fontFamily:"Lato Regular"});
-    }}
-    ><h1>Help</h1><p> And you will be helped!</p></button>
-    <button class="btn btn4"
-    onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#DF362D",color:"white", fontFamily:"Luckiest Guy"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#FFCD58",color:"black", fontFamily:"Bitter Regular"});
-    }}
-    ><h1>Breathe</h1><p>Nature helps to rejuvenate</p></button>
-    <button class="btn btn5"
-    onClick={()=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:"#741AAC",color:"white",fontFamily:" Montserrat Bold"});
-      setPageTextStyle({...PageTextStyle,backgroundColor:"#DEBAD6",color:"black",fontFamily: "Roboto Regular"});
-    }}
-    ><h1>Share</h1><p>That's how you grow!</p></button>
+    <ButtonThemes 
+    setPageHeadingStyle={setPageHeadingStyle} 
+    headingbackgroundColor="#DF362D" 
+    headingcolor="white"  
+    headingfontFamily="Luckiest Guy" 
+    PageTextStyle={PageTextStyle}
+    setPageTextStyle={setPageTextStyle} 
+    pagebackgroundColor="#FFCD58"
+    pagecolor="black" 
+    pagefontFamily="Bitter Regular" 
+    PageHeadingStyle={PageHeadingStyle}
+    classVal="btn btn4"
+    />
+    
+    <ButtonThemes 
+    setPageHeadingStyle={setPageHeadingStyle} 
+    headingbackgroundColor="#741AAC" 
+    headingcolor="white"  
+    headingfontFamily="Montserrat Bold" 
+    PageTextStyle={PageTextStyle}
+    setPageTextStyle={setPageTextStyle} 
+    pagebackgroundColor="#DEBAD6"
+    pagecolor="black" 
+    pagefontFamily="Roboto Regular" 
+    PageHeadingStyle={PageHeadingStyle}
+    classVal="btn btn5"
+    />
+   
+    
     </div>
     <h3>This is what your selected combinations result in👇</h3>
     <Content PageHeadingStyle={PageHeadingStyle} PageTextStyle={PageTextStyle}/>
-     
+    
     </div>
   );
 }

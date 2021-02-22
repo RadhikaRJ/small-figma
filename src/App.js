@@ -5,6 +5,7 @@ import Content from './StyleComponents/Content';
 import ButtonThemes from './StyleComponents/ButtonThemes';
 import ButtonTextSize from './StyleComponents/ButtonTextSize';
 import InputBackgroundColor from './StyleComponents/InputColor';
+import InputTextColor from './InputTextColor';
 
 function App() {
 
@@ -76,35 +77,33 @@ function App() {
     <label>Heading Background Color:  </label>
 
 
-    <InputBackgroundColor PageHeadingStyle={PageHeadingStyle}
-    setBackgroundColor={setPageHeadingStyle}
-    
+    <InputBackgroundColor setFor={PageHeadingStyle}
+    setForFunction={setPageHeadingStyle}
     />
 
    <span>  </span><br></br><br></br>
     <label>Heading Text Color:  </label>
-    <input type="color" 
-    onChange={(change)=>{
-      setPageHeadingStyle({...PageHeadingStyle, color:(change.target.value)})
-    }}
-    ></input>
-    <br></br><br></br>
-    <label>Paragraph Background Color:  </label>
-    <InputBackgroundColor PageHeadingStyle={PageTextStyle}
-    setBackgroundColor={setPageTextStyle}
+
+    <InputTextColor setFor={PageHeadingStyle} 
+    setForFunction={setPageHeadingStyle}
+    />
     
+    <br></br><br></br>
+
+    <label>Paragraph Background Color:  </label>
+    <InputBackgroundColor setFor={PageTextStyle}
+    setForFunction={setPageTextStyle}
     />
 
 
 
     <span>  </span><br></br><br></br> 
     <label>Paragraph Text Color:  </label>
-    <input type="color"
-    onChange={(change)=>{
-      setPageTextStyle({...PageTextStyle,color:(change.target.value)})
-    }}
-    ></input>
-    
+
+    <InputTextColor setFor={PageTextStyle} 
+    setForFunction={setPageTextStyle}
+    />
+       
     
     <br></br>
     <br></br>

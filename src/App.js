@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import Content from './StyleComponents/Content';
 import ButtonThemes from './StyleComponents/ButtonThemes';
+import ButtonTextSize from './StyleComponents/ButtonTextSize';
 
 function App() {
 
@@ -43,19 +44,26 @@ function App() {
       
       <h3>Make a choice:</h3>
       
-      <button style={setStyle()}
-    onClick={() => {
-      setPageTextStyle({ ...PageTextStyle,fontSize: Number(PageTextStyle.fontSize) + 8 });
-    }}
-    >+8px</button>
+      <ButtonTextSize setStyle={setStyle}      
+      setPageTextStyle={setPageTextStyle} 
+      PageTextStyle={PageTextStyle}
+      fontSize={Number(PageTextStyle.fontSize) + 8} 
+      btnText="+8px"
+      />
 
-    <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
+     <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
+     
+      <ButtonTextSize setStyle={setStyle}      
+      setPageTextStyle={setPageTextStyle} 
+      PageTextStyle={PageTextStyle}
+      fontSize={Number(PageTextStyle.fontSize) - 8} 
+      btnText="-8px"
+      />
+      
+
+   
     
-    <button style={setStyle()}
-    onClick={() =>{
-      setPageTextStyle({...PageTextStyle, fontSize: Number(PageTextStyle.fontSize)-8})
-    }}
-    >-8px</button>
+    
    <br></br>
    <br></br>
     <button  style={setStyle()}

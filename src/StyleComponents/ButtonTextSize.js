@@ -14,7 +14,7 @@ function ButtonTextSize(props){
     return(
         <button style={styleButton()}
         onClick={() => {
-            props.setPageTextStyle({...props.PageTextStyle, 
+            props.setFontSize({...props.setForElement, 
             fontSize: props.fontSize
             })
         }}

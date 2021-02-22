@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Content from './StyleComponents/Content';
 import ButtonThemes from './StyleComponents/ButtonThemes';
 import ButtonTextSize from './StyleComponents/ButtonTextSize';
-import ButtonHeadingFontSize from './StyleComponents/ButtonHeadingFontSize';
+import InputColor from './StyleComponents/InputColor';
 
 function App() {
 
@@ -36,8 +36,8 @@ function App() {
       <h3>Make a choice:</h3>
       
       <ButtonTextSize       
-      setPageTextStyle={setPageTextStyle} 
-      PageTextStyle={PageTextStyle}
+      setFontSize={setPageTextStyle} 
+      setForElement={PageTextStyle}
       fontSize={Number(PageTextStyle.fontSize) + 8} 
       btnText="+8px"
       />
@@ -45,8 +45,8 @@ function App() {
      <span> Text Size px: <strong>{PageTextStyle.fontSize}</strong> </span>
 
       <ButtonTextSize      
-      setPageTextStyle={setPageTextStyle} 
-      PageTextStyle={PageTextStyle}
+      setFontSize={setPageTextStyle} 
+      setForElement={PageTextStyle}
       fontSize={Number(PageTextStyle.fontSize) - 8} 
       btnText="-8px"
       />
@@ -54,18 +54,18 @@ function App() {
    <br></br>
    <br></br>
 
-   <ButtonHeadingFontSize 
-      setPageHeadingStyle={setPageHeadingStyle} 
-      PageHeadingStyle={PageHeadingStyle}
+   <ButtonTextSize 
+      setFontSize={setPageHeadingStyle} 
+      setForElement={PageHeadingStyle}
       fontSize={Number(PageHeadingStyle.fontSize) + 8} 
       btnText="+8px"
       />
 
       <span> Heading Size px: <strong>{PageHeadingStyle.fontSize}</strong> </span>
 
-      <ButtonHeadingFontSize      
-      setPageHeadingStyle={setPageHeadingStyle} 
-      PageHeadingStyle={PageHeadingStyle}
+      <ButtonTextSize     
+      setFontSize={setPageHeadingStyle} 
+      setForElement={PageHeadingStyle}
       fontSize={Number(PageHeadingStyle.fontSize) - 8} 
       btnText="-8px"
       />
@@ -75,12 +75,13 @@ function App() {
 <br></br>
     <label>Heading Background Color:  </label>
 
+
+    <InputColor PageHeadingStyle={PageHeadingStyle}
+    setBackgroundColor={setPageHeadingStyle}
     
-    <input type="color" 
-    onChange={(change)=>{
-      setPageHeadingStyle({...PageHeadingStyle, backgroundColor:(change.target.value)})
-    }}
-    ></input><span>  </span><br></br><br></br>
+    />
+
+   <span>  </span><br></br><br></br>
     <label>Heading Text Color:  </label>
     <input type="color" 
     onChange={(change)=>{
@@ -89,11 +90,14 @@ function App() {
     ></input>
     <br></br><br></br>
     <label>Paragraph Background Color:  </label>
-    <input type="color"
-    onChange={(change)=>{
-      setPageTextStyle({...PageTextStyle,backgroundColor:(change.target.value)})
-    }}
-    ></input><span>  </span><br></br><br></br>
+    <InputColor PageHeadingStyle={PageTextStyle}
+    setBackgroundColor={setPageTextStyle}
+    
+    />
+
+
+
+    <span>  </span><br></br><br></br> 
     <label>Paragraph Text Color:  </label>
     <input type="color"
     onChange={(change)=>{

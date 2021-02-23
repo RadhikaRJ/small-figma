@@ -48,7 +48,7 @@ function App() {
       <ButtonTextSize      
       setFontSize={setPageTextStyle} 
       setForElement={PageTextStyle}
-      fontSize={Number(PageTextStyle.fontSize) - 8} 
+      fontSize={(Number(PageTextStyle.fontSize)==8) ? 8 : Number(PageTextStyle.fontSize) - 8} 
       btnText="-8px"
       />
    
@@ -67,7 +67,7 @@ function App() {
       <ButtonTextSize     
       setFontSize={setPageHeadingStyle} 
       setForElement={PageHeadingStyle}
-      fontSize={Number(PageHeadingStyle.fontSize) - 8} 
+      fontSize={(Number(PageHeadingStyle.fontSize)==8) ? 8 : Number(PageHeadingStyle.fontSize) - 8} 
       btnText="-8px"
       />
    
@@ -104,6 +104,35 @@ function App() {
     setForFunction={setPageTextStyle}
     />
        
+       {/* <br></br>
+       <br></br>
+
+       <label>Choose a font for Header: </label>
+       <select id="font-select" name="header-font">
+      
+              <option value="Crimson Text">Crimson Text</option>
+              <option value="Lora">Lora</option>
+              <option value="Permanent Marker">Permanent Marker</option>
+              <option value="Satisfy">Satisfy</option>
+              <option value="Roboto Regular">Roboto Regular</option>
+              
+        </select> */}
+
+        {/* <br></br>
+       <br></br>
+
+       <label>Choose a font for Text: </label>
+       <select id="font-select" 
+       
+       >
+              
+              <option value="Crimson Text">Crimson Text</option>
+              <option value="Lora">Lora</option>
+              <option value="Permanent Marker">Permanent Marker</option>
+              <option value="Satisfy">Satisfy</option>
+              <option value="Roboto Regular">Roboto Regular</option>
+              
+        </select> */}
     
     <br></br>
     <br></br>
